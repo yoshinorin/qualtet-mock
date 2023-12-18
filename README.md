@@ -2,12 +2,24 @@
 
 This project target is create a mock server of [Qualtet](https://github.com/yoshinorin/qualtet). It will be used for [Quintet](https://github.com/yoshinorin/quintet)'s E2E test.
 
-## Run local server
+## Preconditions
+
+Install [cargo-watch](https://github.com/watchexec/cargo-watch).
 
 ```
-$ cargo run
+$ cargo install cargo-watch@8.4.1
+```
 
-// http://localhost:9002
+## Run local server
+
+After running the command, a local server starts at `http://localhost:9002`.
+
+```
+// with auto-reload
+$ cargo watch -w src -x run
+
+// without auto-reload
+$ cargo run
 ```
 
 ## Code format
