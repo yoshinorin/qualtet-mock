@@ -18,6 +18,10 @@ Install [cargo-watch](https://github.com/watchexec/cargo-watch).
 $ cargo install cargo-watch@8.4.1
 ```
 
+## API Docs
+
+Please see [Qualtet's REST API docs](https://yoshinorin.github.io/qualtet/rest-api/) instead.
+
 ## Run local server
 
 After running the command, a local server starts at `http://localhost:9002`.
