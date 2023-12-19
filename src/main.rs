@@ -22,6 +22,7 @@ async fn archives() -> Result<HttpResponse, Error> {
 async fn main() -> std::io::Result<()> {
     HttpServer::new(|| App::new().service(root).service(archives))
         .bind(("127.0.0.1", 9002))?
+        .shutdown_timeout(3)
         .run()
         .await
 }
