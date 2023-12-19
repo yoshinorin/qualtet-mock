@@ -19,12 +19,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set up rustup
+      - name: Set up rust
         run: |
-          rustup update
+          rustup toolchain install 1.74.1 --profile minimal --no-self-update
           rustup --version
           rustc --version
           cargo --version
       - name: cargo build
-        # TODO: How to specify `rustc` version???
         run: cargo build
