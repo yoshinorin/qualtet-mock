@@ -15,5 +15,7 @@ pub fn readfile(path: &str) -> Result<String, io::Error> {
 pub fn make_ok_response(content: String) -> Result<HttpResponse, HttpResponseError> {
     Ok(HttpResponse::Ok()
         .content_type("application/json")
+        .insert_header(("X-Request-Id", "c5befa09-ac43-4ee5-9ece-0db860163d93"))
+        .insert_header(("X-Response-Time", "15"))
         .body(content))
 }
