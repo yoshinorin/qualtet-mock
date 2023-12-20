@@ -9,19 +9,13 @@ async fn root() -> impl Responder {
 #[get("/archives")]
 async fn archives() -> Result<HttpResponse, Error> {
     let content = utils::readfile("./src/resources/archives.json")?;
-
-    Ok(HttpResponse::Ok()
-        .content_type("application/json")
-        .body(content))
+    utils::make_ok_response(content)
 }
 
 #[get("/articles")]
 async fn articles() -> Result<HttpResponse, Error> {
     let content = utils::readfile("./src/resources/articles.json")?;
-
-    Ok(HttpResponse::Ok()
-        .content_type("application/json")
-        .body(content))
+    utils::make_ok_response(content)
 }
 
 #[actix_web::main]
