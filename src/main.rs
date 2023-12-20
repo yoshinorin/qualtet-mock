@@ -1,6 +1,5 @@
 use actix_web::{get, App, Error, HttpResponse, HttpServer, Responder};
-use std::fs::File;
-use std::io::prelude::*;
+mod utils;
 
 #[get("/")]
 async fn root() -> impl Responder {
@@ -9,24 +8,20 @@ async fn root() -> impl Responder {
 
 #[get("/archives")]
 async fn archives() -> Result<HttpResponse, Error> {
-    let mut file: File = File::open("./src/resources/archives.json")?;
-    let mut contents: String = String::new();
-    file.read_to_string(&mut contents)?;
+    let content = utils::readfile("./src/resources/archives.json")?;
 
     Ok(HttpResponse::Ok()
         .content_type("application/json")
-        .body(contents))
+        .body(content))
 }
 
 #[get("/articles")]
 async fn articles() -> Result<HttpResponse, Error> {
-    let mut file: File = File::open("./src/resources/articles.json")?;
-    let mut contents: String = String::new();
-    file.read_to_string(&mut contents)?;
+    let content = utils::readfile("./src/resources/articles.json")?;
 
     Ok(HttpResponse::Ok()
         .content_type("application/json")
-        .body(contents))
+        .body(content))
 }
 
 #[actix_web::main]
