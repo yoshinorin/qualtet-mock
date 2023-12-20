@@ -18,9 +18,20 @@ async fn archives() -> Result<HttpResponse, Error> {
         .body(contents))
 }
 
+#[get("/articles")]
+async fn articles() -> Result<HttpResponse, Error> {
+    let mut file: File = File::open("./src/resources/articles.json")?;
+    let mut contents: String = String::new();
+    file.read_to_string(&mut contents)?;
+
+    Ok(HttpResponse::Ok()
+        .content_type("application/json")
+        .body(contents))
+}
+
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
-    HttpServer::new(|| App::new().service(root).service(archives))
+    HttpServer::new(|| App::new().service(root).service(archives).service(articles))
         .bind(("127.0.0.1", 9002))?
         .shutdown_timeout(3)
         .run()
