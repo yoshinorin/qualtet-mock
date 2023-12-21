@@ -19,3 +19,11 @@ pub fn make_ok_response(content: String) -> Result<HttpResponse, HttpResponseErr
         .insert_header(("X-Response-Time", "15"))
         .body(content))
 }
+
+// TODO: I want to overload with args.
+pub fn make_empty_ok_response() -> Result<HttpResponse, HttpResponseError> {
+    Ok(HttpResponse::Ok()
+        .insert_header(("X-Request-Id", "c5befa09-ac43-4ee5-9ece-0db860163d93"))
+        .insert_header(("X-Response-Time", "15"))
+        .body(""))
+}
