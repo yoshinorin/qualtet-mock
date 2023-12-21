@@ -1,5 +1,5 @@
 use actix_web::{App, HttpServer};
-use services::{archives::archives, articles::articles, index::index};
+use services::{archives::archives, articles::articles, index::index, series::series};
 mod services;
 mod utils;
 
@@ -10,6 +10,7 @@ async fn main() -> std::io::Result<()> {
             .service(index)
             .service(archives)
             .service(articles)
+            .service(series)
     })
     .bind(("127.0.0.1", 9002))?
     .shutdown_timeout(3)
