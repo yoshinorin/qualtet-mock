@@ -1,0 +1,16 @@
+{
+  "name": "qualtet",
+  "version": "v2.11.0",
+  "repository": "https://github.com/yoshinorin/qualtet",
+  "runtime": {
+    "name": "Java",
+    "vendor": "Eclipse Adoptium",
+    "version": "17.0.9"
+  },
+  "build": {
+    "commit": "24af403",
+    "url": "https://github.com/yoshinorin/qualtet/commit/24af403",
+    "scalaVersion": "3.3.1",
+    "sbtVersion": "1.9.7"
+  }
+}
