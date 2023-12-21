@@ -23,6 +23,22 @@ $ cargo install cargo-watch@8.4.1
 
 Please see [Qualtet's REST API docs](https://yoshinorin.github.io/qualtet/rest-api/) instead.
 
+## Supported Endpoint
+
+- [x] `/archives`
+- [x] `/articles`
+  - [ ] `/articles/{queryParams}`
+- [ ] `/contents/{path}`
+- [ ] `/feeds`
+- [ ] `/search`
+- [x] `/series`
+  - [ ] `/series/{seriesName}`
+- [ ] `/sitemaps`
+- [x] `/system/health`
+- [x] `/system/metadata`
+- [ ] `/tags`
+  - [ ] `/tags/{queryParams}`
+
 ## Run local server
 
 After running the command, a local server starts at `http://localhost:9002`.
