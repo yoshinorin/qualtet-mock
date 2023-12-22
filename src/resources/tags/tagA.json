@@ -1,0 +1,29 @@
+{
+  "count": 96,
+  "articles": [
+    {
+      "id": "01hj3erydmnbgxmh2zb9qv89se",
+      "path": "/articles/semper/",
+      "title": "Aliquam sed risus ut ante semper ultrices pulvinar in lectus.",
+      "content": "Donec vitae rhoncus quam, id ornare urna. Aenean vitae pharetra arcu, nec condimentum enim. Ut a sodales tortor.",
+      "publishedAt": 1692276019,
+      "updatedAt": 1692276406
+    },
+    {
+      "id": "01hhysykhcmww2vm3tm5d0x4hc",
+      "path": "/articles/lorel/",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "content": "Curabitur aliquet et massa vitae sagittis. Morbi ultrices metus libero, vel pharetra purus dapibus in.",
+      "publishedAt": 1690894639,
+      "updatedAt": 1690896860
+    },
+    {
+      "id": "01hhy8nwkdvs4m36m2ywcg076p",
+      "path": "/articles/sodales/",
+      "title": "Quisque sodales metus non nisi consequat cursus non vel sem.",
+      "content": "Nunc sit amet nunc elementum, lobortis urna in, suscipit risus. Aliquam placerat porttitor posuere. Duis porttitor nulla nec eros efficitur, ac semper arcu pulvinar.",
+      "publishedAt": 1690377097,
+      "updatedAt": 1690377989
+    }
+  ]
+}

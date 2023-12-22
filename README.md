@@ -27,7 +27,7 @@ Please see [Qualtet's REST API docs](https://yoshinorin.github.io/qualtet/rest-a
 
 - [x] `/archives`
 - [x] `/articles`
-  - [ ] `/articles/{queryParams}`
+  - [ ] `/articles?{queryParams}`
 - [ ] `/contents/{path}`
 - [ ] `/feeds`
 - [ ] `/search`
@@ -36,8 +36,9 @@ Please see [Qualtet's REST API docs](https://yoshinorin.github.io/qualtet/rest-a
 - [ ] `/sitemaps`
 - [x] `/system/health`
 - [x] `/system/metadata`
-- [ ] `/tags`
-  - [ ] `/tags/{queryParams}`
+- [x] `/tags`
+  - [x] `/tags/{tagName}`
+  - [ ] `/tags/{tagName}?{queryParams}`
 
 ## Run local server
 

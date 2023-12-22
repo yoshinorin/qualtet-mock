@@ -5,6 +5,7 @@ use services::{
     index::index,
     series::series,
     system::{health, metadata},
+    tags::{tag_a, tags},
 };
 mod services;
 mod utils;
@@ -19,6 +20,8 @@ async fn main() -> std::io::Result<()> {
             .service(series)
             .service(health)
             .service(metadata)
+            .service(tags)
+            .service(tag_a)
     })
     .bind(("127.0.0.1", 9002))?
     .shutdown_timeout(3)
