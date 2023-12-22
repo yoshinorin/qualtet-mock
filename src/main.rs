@@ -2,6 +2,10 @@ use actix_web::{App, HttpServer};
 use services::{
     archives::archives,
     articles::articles,
+    contents::{
+        empty_robots, empty_tags, partially_robots, standard, with_externalresources,
+        without_robots, without_tags,
+    },
     index::index,
     series::series,
     system::{health, metadata},
@@ -17,6 +21,13 @@ async fn main() -> std::io::Result<()> {
             .service(index)
             .service(archives)
             .service(articles)
+            .service(standard)
+            .service(empty_robots)
+            .service(empty_tags)
+            .service(partially_robots)
+            .service(with_externalresources)
+            .service(without_robots)
+            .service(without_tags)
             .service(series)
             .service(health)
             .service(metadata)
