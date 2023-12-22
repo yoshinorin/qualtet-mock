@@ -1,4 +1,6 @@
+use actix_web::middleware::Logger;
 use actix_web::{App, HttpServer};
+use log::info;
 use services::{
     archives::archives,
     articles::articles,
@@ -11,13 +13,20 @@ use services::{
     system::{health, metadata},
     tags::{tag_a, tags},
 };
+use std::env;
 mod services;
 mod utils;
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
+    env::set_var("RUST_LOG", "debug");
+    env_logger::init();
+
+    info!("server is starting up");
+
     HttpServer::new(|| {
         App::new()
+            .wrap(Logger::default())
             .service(index)
             .service(archives)
             .service(articles)
