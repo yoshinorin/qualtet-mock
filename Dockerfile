@@ -1,4 +1,5 @@
-FROM rust:1.74.1-bookworm
+# Build image
+FROM rust:1.74.1-bookworm as builder
 
 LABEL maintainer="yoshinorin"
 WORKDIR /qualtet-mock
@@ -8,7 +9,17 @@ COPY ./ .
 RUN apt-get update -y \
   && apt autoremove \
   && apt clean \
-  && cargo build --release \
-  && rm -rf ./target/release/build ./target/release/deps ./target/release/.fingerprint ./target/release/examples ./target/release/qualtet_mock.pdb ./target/release/qualtet_mock.exe ./target/release/qualtet_mock.d
+  && cargo build --release
 
-ENTRYPOINT ["/qualtet-mock/target/release/qualtet-mock"]
+# Runtime image
+FROM --platform=linux/x86_64 gcr.io/distroless/cc-debian12 AS base
+WORKDIR /qualtet-mock
+
+LABEL maintainer="yoshinorin"
+
+COPY --from=builder /qualtet-mock/target/release/qualtet-mock .
+COPY --from=builder /qualtet-mock/src/resources ./src/resources
+
+EXPOSE 9002
+
+ENTRYPOINT ["./qualtet-mock"]
