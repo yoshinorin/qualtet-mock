@@ -64,6 +64,17 @@ $ cargo run
 $ cargo fmt
 ```
 
+## Docker
+
+How to build.
+
+```sh
+// with cache
+$ docker build . --progress=plain
+// without cache
+$ docker build . --progress=plain --no-cache
+```
+
 ## LICENSE
 
 This code is open source software licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0.html).
