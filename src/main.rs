@@ -43,7 +43,7 @@ async fn main() -> std::io::Result<()> {
             .service(tags)
             .service(tag_a)
     })
-    .bind(("127.0.0.1", 9002))?
+    .bind(("0.0.0.0", 9002))?
     .shutdown_timeout(3)
     .run()
     .await
