@@ -5,6 +5,7 @@ on:
     paths-ignore:
       - LICENSE
       - README.md
+      - Dockerfile
 
 jobs:
   build:
