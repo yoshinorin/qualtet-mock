@@ -1,7 +1,7 @@
 use crate::utils;
 use actix_web::{get, Error, HttpResponse};
 
-#[get("/tags")]
+#[get("/tags/")]
 pub async fn tags() -> Result<HttpResponse, Error> {
     let content = utils::readfile("./src/resources/tags/index.json")?;
     utils::make_ok_response(content)
