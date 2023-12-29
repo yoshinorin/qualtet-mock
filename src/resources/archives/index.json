@@ -1,37 +1,37 @@
 [
   {
-    "path": "/articles/2023/12/19/lorel/",
-    "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "path": "/articles/standard/",
+    "title": "Standard post",
     "publishedAt": 1702913636
   },
   {
-    "path": "/articles/2023/12/18/sodales/",
-    "title": "Quisque sodales metus non nisi consequat cursus non vel sem.",
+    "path": "/contents/articles/empty-robots/",
+    "title": "Empty robots",
     "publishedAt": 1702895439
   },
   {
-    "path": "/articles/2023/12/17/dapibus/",
-    "title": "Nam dapibus augue at convallis luctus.",
+    "path": "/contents/articles/empty-tags/",
+    "title": "Empty tags",
     "publishedAt": 1702821510
   },
   {
-    "path": "/articles/2023/12/17/scelerisque/",
-    "title": "Aliquam id velit non massa scelerisque venenatis.",
+    "path": "/contents/articles/partially-robots/",
+    "title": "Partially robots",
     "publishedAt": 1702814096
   },
   {
-    "path": "/articles/2023/12/12/eleifend/",
-    "title": "Fusce eleifend massa ut lorem iaculis, eu auctor lacus convallis.",
+    "path": "/contents/articles/with-externalresources/",
+    "title": "With externalResources",
     "publishedAt": 1702389484
   },
   {
-    "path": "/articles/2023/12/12/feugiat/",
-    "title": "Etiam feugiat ipsum at purus lacinia sagittis.",
+    "path": "/contents/articles/without-robots/",
+    "title": "Without robots",
     "publishedAt": 1702388845
   },
   {
-    "path": "/articles/2023/12/12/dignissim/",
-    "title": "Nunc in orci et velit dignissim viverra non ac dolor.",
+    "path": "/contents/articles/without-tags/",
+    "title": "Without tags",
     "publishedAt": 1702387914
   },
   {

@@ -3,56 +3,56 @@
   "articles": [
     {
       "id": "01hj3erydmnbgxmh2zb9qv89se",
-      "path": "/articles/2023/12/20/semper/",
-      "title": "Aliquam sed risus ut ante semper ultrices pulvinar in lectus.",
+      "path": "/articles/standard/",
+      "title": "Standard post",
       "content": "Donec vitae rhoncus quam, id ornare urna. Aenean vitae pharetra arcu, nec condimentum enim. Ut a sodales tortor.",
       "publishedAt": 1703069944,
       "updatedAt": 1703070643
     },
     {
       "id": "01hhysykhcmww2vm3tm5d0x4hc",
-      "path": "/articles/2023/12/19/lorel/",
-      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "path": "/articles/empty-robots/",
+      "title": "Empty robots",
       "content": "Curabitur aliquet et massa vitae sagittis. Morbi ultrices metus libero, vel pharetra purus dapibus in.",
       "publishedAt": 1702913636,
       "updatedAt": 1703069936
     },
     {
       "id": "01hhy8nwkdvs4m36m2ywcg076p",
-      "path": "/articles/2023/12/18/sodales/",
-      "title": "Quisque sodales metus non nisi consequat cursus non vel sem.",
+      "path": "/articles/empty-tags/",
+      "title": "Empty tags",
       "content": "Nunc sit amet nunc elementum, lobortis urna in, suscipit risus. Aliquam placerat porttitor posuere. Duis porttitor nulla nec eros efficitur, ac semper arcu pulvinar.",
       "publishedAt": 1702895439,
       "updatedAt": 1702896557
     },
     {
       "id": "01hhw1rxb9f43fj4ssx1wpywmk",
-      "path": "/articles/2023/12/17/dapibus/",
-      "title": "Nam dapibus augue at convallis luctus.",
+      "path": "/articles/partially-robots/",
+      "title": "Partially robots",
       "content": "Curabitur ut lacus a tortor suscipit dictum. Integer hendrerit neque vel iaculis laoreet. Praesent nec mauris id magna porta euismod ut non elit.",
       "publishedAt": 1702821510,
       "updatedAt": 1702822437
     },
     {
       "id": "01hhw0y3s4qwaj8r47kfhwdgpm",
-      "path": "/articles/2023/12/17/scelerisque/",
-      "title": "Aliquam id velit non massa scelerisque venenatis.",
+      "path": "/articles/with-externalresources/",
+      "title": "With externalResources",
       "content": "Etiam scelerisque, odio eget facilisis varius, nulla magna varius sem, a sodales est arcu tincidunt quam. Pellentesque vitae fringilla dui.",
       "publishedAt": 1702814096,
       "updatedAt": 1702821047
     },
     {
       "id": "01hhf6c0vgreh1wctpbgbrmwm0",
-      "path": "/articles/2023/12/12/eleifend/",
-      "title": "Fusce eleifend massa ut lorem iaculis, eu auctor lacus convallis.",
+      "path": "/articles/without-robots/",
+      "title": "Without robots",
       "content": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam erat volutpat. Nullam id condimentum augue, vel pulvinar velit.",
       "publishedAt": 1702389484,
       "updatedAt": 1702391169
     },
     {
       "id": "01hhf4s79ebvnq62ay6dpdbtkv",
-      "path": "/articles/2023/12/12/feugiat/",
-      "title": "Etiam feugiat ipsum at purus lacinia sagittis.",
+      "path": "/articles/without-tags/",
+      "title": "Without tags",
       "content": "Donec eget leo non arcu tempus aliquam. Praesent eu facilisis ipsum, eget ultrices augue. Etiam sagittis quam quis pharetra ultrices. Proin id tortor et velit consectetur feugiat eget at sapien.",
       "publishedAt": 1702388845,
       "updatedAt": 1702389285
