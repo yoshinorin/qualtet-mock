@@ -1,44 +1,32 @@
 use crate::utils;
+use actix_web::web::Path;
 use actix_web::{get, Error, HttpResponse};
 
-#[get("/contents/articles/nested/standard/")]
-pub async fn standard() -> Result<HttpResponse, Error> {
-    let content = utils::readfile("./src/resources/contents/nested/standard.json")?;
-    utils::make_ok_response(content)
+#[get("/contents/articles/nested/{path}")]
+pub async fn content_without_trailing_slash(path: Path<String>) -> Result<HttpResponse, Error> {
+    response(format!("{}{}", path, "/"))
 }
 
-#[get("/contents/articles/nested/empty-robots/")]
-pub async fn empty_robots() -> Result<HttpResponse, Error> {
-    let content = utils::readfile("./src/resources/contents/nested/emptyRobots.json")?;
-    utils::make_ok_response(content)
+#[get("/contents/articles/nested/{path}/")]
+pub async fn content_with_trailing_slash(path: Path<String>) -> Result<HttpResponse, Error> {
+    // NOTE: `actix-web` seems remove trailing slash.
+    response(format!("{}{}", path, "/"))
 }
 
-#[get("/contents/articles/nested/empty-tags/")]
-pub async fn empty_tags() -> Result<HttpResponse, Error> {
-    let content = utils::readfile("./src/resources/contents/nested/emptyTags.json")?;
-    utils::make_ok_response(content)
-}
-
-#[get("/contents/articles/nested/partially-robots/")]
-pub async fn partially_robots() -> Result<HttpResponse, Error> {
-    let content = utils::readfile("./src/resources/contents/nested/partiallyRobots.json")?;
-    utils::make_ok_response(content)
-}
-
-#[get("/contents/articles/nested/with-externalresources/")]
-pub async fn with_externalresources() -> Result<HttpResponse, Error> {
-    let content = utils::readfile("./src/resources/contents/nested/withExternalResources.json")?;
-    utils::make_ok_response(content)
-}
-
-#[get("/contents/articles/nested/without-robots/")]
-pub async fn without_robots() -> Result<HttpResponse, Error> {
-    let content = utils::readfile("./src/resources/contents/nested/withoutRobots.json")?;
-    utils::make_ok_response(content)
-}
-
-#[get("/contents/articles/nested/without-tags/")]
-pub async fn without_tags() -> Result<HttpResponse, Error> {
-    let content = utils::readfile("./src/resources/contents/nested/withoutTags.json")?;
-    utils::make_ok_response(content)
+fn response(path: String) -> Result<HttpResponse, Error> {
+    let json = match path.as_str() {
+        "standard/" => utils::readfile("./src/resources/contents/nested/standard.json")?,
+        "empty-robots/" => utils::readfile("./src/resources/contents/nested/emptyRobots.json")?,
+        "empty-tags/" => utils::readfile("./src/resources/contents/nested/emptyTags.json")?,
+        "partially-robots/" => {
+            utils::readfile("./src/resources/contents/nested/partiallyRobots.json")?
+        }
+        "with-externalresources/" => {
+            utils::readfile("./src/resources/contents/nested/withExternalResources.json")?
+        }
+        "without-robots/" => utils::readfile("./src/resources/contents/nested/withoutRobots.json")?,
+        "without-tags/" => utils::readfile("./src/resources/contents/nested/withoutTags.json")?,
+        _ => return utils::make_not_found_response(),
+    };
+    utils::make_ok_response(json)
 }

@@ -27,3 +27,10 @@ pub fn make_empty_ok_response() -> Result<HttpResponse, HttpResponseError> {
         .insert_header(("X-Response-Time", "15"))
         .body(""))
 }
+
+pub fn make_not_found_response() -> Result<HttpResponse, HttpResponseError> {
+    Ok(HttpResponse::NotFound()
+        .insert_header(("X-Request-Id", "c5befa09-ac43-4ee5-9ece-0db860163d93"))
+        .insert_header(("X-Response-Time", "15"))
+        .body(""))
+}

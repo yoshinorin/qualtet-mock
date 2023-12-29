@@ -4,16 +4,14 @@ use log::info;
 use services::{
     archives::archives,
     articles::articles,
-    contents::{
-        empty_robots, empty_tags, partially_robots, standard, with_externalresources,
-        without_robots, without_tags,
-    },
+    contents::{content_with_trailing_slash, content_without_trailing_slash},
     index::index,
     series::series,
     system::{health, metadata},
     tags::{tag_a, tags},
 };
 use std::env;
+
 mod services;
 mod utils;
 
@@ -30,13 +28,8 @@ async fn main() -> std::io::Result<()> {
             .service(index)
             .service(archives)
             .service(articles)
-            .service(standard)
-            .service(empty_robots)
-            .service(empty_tags)
-            .service(partially_robots)
-            .service(with_externalresources)
-            .service(without_robots)
-            .service(without_tags)
+            .service(content_with_trailing_slash)
+            .service(content_without_trailing_slash)
             .service(series)
             .service(health)
             .service(metadata)
