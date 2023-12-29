@@ -1,36 +1,36 @@
 [
   {
-    "path": "/articles/standard/",
-    "title": "Standard post",
+    "path": "/articles/nested/standard/",
+    "title": "Standard nested post",
     "publishedAt": 1702913636
   },
   {
-    "path": "/contents/articles/empty-robots/",
+    "path": "/articles/nested/empty-robots/",
     "title": "Empty robots",
     "publishedAt": 1702895439
   },
   {
-    "path": "/contents/articles/empty-tags/",
+    "path": "/articles/nested/empty-tags/",
     "title": "Empty tags",
     "publishedAt": 1702821510
   },
   {
-    "path": "/contents/articles/partially-robots/",
+    "path": "/articles/nested/partially-robots/",
     "title": "Partially robots",
     "publishedAt": 1702814096
   },
   {
-    "path": "/contents/articles/with-externalresources/",
+    "path": "/articles/nested/with-externalresources/",
     "title": "With externalResources",
     "publishedAt": 1702389484
   },
   {
-    "path": "/contents/articles/without-robots/",
+    "path": "/articles/nested/without-robots/",
     "title": "Without robots",
     "publishedAt": 1702388845
   },
   {
-    "path": "/contents/articles/without-tags/",
+    "path": "/articles/nested/without-tags/",
     "title": "Without tags",
     "publishedAt": 1702387914
   },

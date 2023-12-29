@@ -3,15 +3,15 @@
   "articles": [
     {
       "id": "01hj3erydmnbgxmh2zb9qv89se",
-      "path": "/articles/standard/",
-      "title": "Standard post",
+      "path": "/articles/nested/standard/",
+      "title": "Standard nested post",
       "content": "Donec vitae rhoncus quam, id ornare urna. Aenean vitae pharetra arcu, nec condimentum enim. Ut a sodales tortor.",
       "publishedAt": 1703069944,
       "updatedAt": 1703070643
     },
     {
       "id": "01hhysykhcmww2vm3tm5d0x4hc",
-      "path": "/articles/empty-robots/",
+      "path": "/articles/nested/empty-robots/",
       "title": "Empty robots",
       "content": "Curabitur aliquet et massa vitae sagittis. Morbi ultrices metus libero, vel pharetra purus dapibus in.",
       "publishedAt": 1702913636,
@@ -19,7 +19,7 @@
     },
     {
       "id": "01hhy8nwkdvs4m36m2ywcg076p",
-      "path": "/articles/empty-tags/",
+      "path": "/articles/nested/empty-tags/",
       "title": "Empty tags",
       "content": "Nunc sit amet nunc elementum, lobortis urna in, suscipit risus. Aliquam placerat porttitor posuere. Duis porttitor nulla nec eros efficitur, ac semper arcu pulvinar.",
       "publishedAt": 1702895439,
@@ -27,7 +27,7 @@
     },
     {
       "id": "01hhw1rxb9f43fj4ssx1wpywmk",
-      "path": "/articles/partially-robots/",
+      "path": "/articles/nested/partially-robots/",
       "title": "Partially robots",
       "content": "Curabitur ut lacus a tortor suscipit dictum. Integer hendrerit neque vel iaculis laoreet. Praesent nec mauris id magna porta euismod ut non elit.",
       "publishedAt": 1702821510,
@@ -35,7 +35,7 @@
     },
     {
       "id": "01hhw0y3s4qwaj8r47kfhwdgpm",
-      "path": "/articles/with-externalresources/",
+      "path": "/articles/nested/with-externalresources/",
       "title": "With externalResources",
       "content": "Etiam scelerisque, odio eget facilisis varius, nulla magna varius sem, a sodales est arcu tincidunt quam. Pellentesque vitae fringilla dui.",
       "publishedAt": 1702814096,
@@ -43,7 +43,7 @@
     },
     {
       "id": "01hhf6c0vgreh1wctpbgbrmwm0",
-      "path": "/articles/without-robots/",
+      "path": "/articles/nested/without-robots/",
       "title": "Without robots",
       "content": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam erat volutpat. Nullam id condimentum augue, vel pulvinar velit.",
       "publishedAt": 1702389484,
@@ -51,7 +51,7 @@
     },
     {
       "id": "01hhf4s79ebvnq62ay6dpdbtkv",
-      "path": "/articles/without-tags/",
+      "path": "/articles/nested/without-tags/",
       "title": "Without tags",
       "content": "Donec eget leo non arcu tempus aliquam. Praesent eu facilisis ipsum, eget ultrices augue. Etiam sagittis quam quis pharetra ultrices. Proin id tortor et velit consectetur feugiat eget at sapien.",
       "publishedAt": 1702388845,

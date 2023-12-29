@@ -28,13 +28,14 @@ Please see [Qualtet's REST API docs](https://yoshinorin.github.io/qualtet/rest-a
 - [x] `/archives`
 - [x] `/articles`
   - [ ] `/articles?{queryParams}`
-- [x] `/contents/articles/standard/`: Standard post.
-  - [x] `/contents/articles/empty-robots/`: robotesAttrobutes are empty post.
-  - [x] `/contents/articles/empty-tags/`: tags are empty post.
-  - [x] `/contents/articles/partially-robots/`: with partially robotesAttrobutes post.
-  - [x] `/contents/articles/with-externalresources/`: With externalResources post.
-  - [x] `/contents/articles/without-robots/`: without robotesAttrobutes post.
-  - [x] `/contents/articles/without-tags/`: Without tags post.
+- [ ] `/contents/articles/standard/`: Standard post (not nested).
+- [x] `/contents/articles/nested/standard/`: Standard post.
+  - [x] `/contents/articles/nested/empty-robots/`: robotesAttrobutes are empty post.
+  - [x] `/contents/articles/nested/empty-tags/`: tags are empty post.
+  - [x] `/contents/articles/nested/partially-robots/`: with partially robotesAttrobutes post.
+  - [x] `/contents/articles/nested/with-externalresources/`: With externalResources post.
+  - [x] `/contents/articles/nested/without-robots/`: without robotesAttrobutes post.
+  - [x] `/contents/articles/nested/without-tags/`: Without tags post.
 - [ ] `/feeds`
 - [ ] `/search`
 - [x] `/series`
