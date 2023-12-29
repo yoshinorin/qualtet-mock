@@ -47,6 +47,10 @@ Please see [Qualtet's REST API docs](https://yoshinorin.github.io/qualtet/rest-a
   - [x] `/tags/{tagName}`
   - [ ] `/tags/{tagName}?{queryParams}`
 
+## Docker Support
+
+Qualtet-mock provides docker image. Please see [GitHub Container Repository](https://github.com/yoshinorin/qualtet-mock/pkgs/container/docker-qualtet-mock).
+
 ## Run local server
 
 After running the command, a local server starts at `http://localhost:9002`.
