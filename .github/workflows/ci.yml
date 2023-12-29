@@ -6,6 +6,8 @@ on:
       - LICENSE
       - README.md
       - Dockerfile
+      - Makefile
+      - '.github/worlflows/docker.yml'
 
 jobs:
   build:
