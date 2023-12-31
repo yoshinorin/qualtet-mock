@@ -1,3 +1,4 @@
+use actix_cors::Cors;
 use actix_web::middleware::Logger;
 use actix_web::{App, HttpServer};
 use log::info;
@@ -25,6 +26,7 @@ async fn main() -> std::io::Result<()> {
     HttpServer::new(|| {
         App::new()
             .wrap(Logger::default())
+            .wrap(Cors::permissive())
             .service(index)
             .service(archives)
             .service(articles)
