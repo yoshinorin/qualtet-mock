@@ -40,7 +40,7 @@ Please see [Qualtet's REST API docs](https://yoshinorin.github.io/qualtet/rest-a
 - [ ] `/search`
 - [x] `/series`
   - [ ] `/series/{seriesName}`
-- [ ] `/sitemaps`
+- [x] `/sitemaps/`
 - [x] `/system/health`
 - [x] `/system/metadata`
 - [x] `/tags`

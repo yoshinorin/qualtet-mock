@@ -8,6 +8,7 @@ use services::{
     contents::{content_with_trailing_slash, content_without_trailing_slash},
     index::index,
     series::series,
+    sitemaps::sitemaps,
     system::{health, metadata},
     tags::{tag_a, tags},
 };
@@ -33,6 +34,7 @@ async fn main() -> std::io::Result<()> {
             .service(content_with_trailing_slash)
             .service(content_without_trailing_slash)
             .service(series)
+            .service(sitemaps)
             .service(health)
             .service(metadata)
             .service(tags)
