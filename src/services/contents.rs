@@ -30,3 +30,15 @@ fn response(path: String) -> Result<HttpResponse, Error> {
     };
     utils::make_ok_response(json)
 }
+
+#[get("/contents/articles/{yyyy}/{mm}/{dd}/{path}")]
+pub async fn content_yyyymmdd_without_trailing_slash() -> Result<HttpResponse, Error> {
+    let content = utils::readfile("./src/resources/contents/yyyy/mm/dd/standard.json")?;
+    utils::make_ok_response(content)
+}
+
+#[get("/contents/articles/{yyyy}/{mm}/{dd}/{path}/")]
+pub async fn content_yyyymmdd_with_trailing_slash() -> Result<HttpResponse, Error> {
+    let content = utils::readfile("./src/resources/contents/yyyy/mm/dd/standard.json")?;
+    utils::make_ok_response(content)
+}
