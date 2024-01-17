@@ -6,6 +6,7 @@ use services::{
     archives::archives,
     articles::articles,
     contents::{content_with_trailing_slash, content_without_trailing_slash},
+    feeds::index_feed,
     index::index,
     series::series,
     sitemaps::sitemaps,
@@ -33,6 +34,7 @@ async fn main() -> std::io::Result<()> {
             .service(articles)
             .service(content_with_trailing_slash)
             .service(content_without_trailing_slash)
+            .service(index_feed)
             .service(series)
             .service(sitemaps)
             .service(health)

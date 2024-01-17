@@ -36,7 +36,7 @@ Please see [Qualtet's REST API docs](https://yoshinorin.github.io/qualtet/rest-a
   - [x] `/contents/articles/nested/with-externalresources/`: With externalResources post.
   - [x] `/contents/articles/nested/without-robots/`: without robotesAttrobutes post.
   - [x] `/contents/articles/nested/without-tags/`: Without tags post.
-- [ ] `/feeds`
+- [x] `/feeds/index`
 - [ ] `/search`
 - [x] `/series`
   - [ ] `/series/{seriesName}`

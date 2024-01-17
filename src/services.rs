@@ -1,6 +1,7 @@
 pub mod archives;
 pub mod articles;
 pub mod contents;
+pub mod feeds;
 pub mod index;
 pub mod series;
 pub mod sitemaps;
