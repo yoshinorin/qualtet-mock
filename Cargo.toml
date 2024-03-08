@@ -3,6 +3,7 @@ name = "qualtet-mock"
 version = "2.11.0"
 edition = "2021"
 authors = ["yoshinorin"]
+rust-version = "1.74"
 
 [dependencies]
 actix-web = "4.4.0"
