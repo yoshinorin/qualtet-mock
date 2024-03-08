@@ -2,12 +2,12 @@ use crate::utils;
 use actix_web::web::Path;
 use actix_web::{get, Error, HttpResponse};
 
-#[get("/contents/articles/nested/{path}")]
+#[get("/v1/contents/articles/nested/{path}")]
 pub async fn content_without_trailing_slash(path: Path<String>) -> Result<HttpResponse, Error> {
     response(format!("{}{}", path, "/"))
 }
 
-#[get("/contents/articles/nested/{path}/")]
+#[get("/v1/contents/articles/nested/{path}/")]
 pub async fn content_with_trailing_slash(path: Path<String>) -> Result<HttpResponse, Error> {
     // NOTE: `actix-web` seems remove trailing slash.
     response(format!("{}{}", path, "/"))
@@ -31,13 +31,13 @@ fn response(path: String) -> Result<HttpResponse, Error> {
     utils::make_ok_response(json)
 }
 
-#[get("/contents/articles/{yyyy}/{mm}/{dd}/{path}")]
+#[get("/v1/contents/articles/{yyyy}/{mm}/{dd}/{path}")]
 pub async fn content_yyyymmdd_without_trailing_slash() -> Result<HttpResponse, Error> {
     let content = utils::readfile("./src/resources/contents/yyyy/mm/dd/standard.json")?;
     utils::make_ok_response(content)
 }
 
-#[get("/contents/articles/{yyyy}/{mm}/{dd}/{path}/")]
+#[get("/v1/contents/articles/{yyyy}/{mm}/{dd}/{path}/")]
 pub async fn content_yyyymmdd_with_trailing_slash() -> Result<HttpResponse, Error> {
     let content = utils::readfile("./src/resources/contents/yyyy/mm/dd/standard.json")?;
     utils::make_ok_response(content)
