@@ -25,27 +25,27 @@ Please see [Qualtet's REST API docs](https://yoshinorin.github.io/qualtet/rest-a
 
 ## Supported Endpoint
 
-- [x] `/archives`
-- [x] `/articles`
-  - [ ] `/articles?{queryParams}`
-- [ ] `/contents/articles/standard/`: Standard post (not nested).
-- [x] `/contents/articles/nested/standard/`: Standard post.
-  - [x] `/contents/articles/nested/empty-robots/`: robotesAttrobutes are empty post.
-  - [x] `/contents/articles/nested/empty-tags/`: tags are empty post.
-  - [x] `/contents/articles/nested/partially-robots/`: with partially robotesAttrobutes post.
-  - [x] `/contents/articles/nested/with-externalresources/`: With externalResources post.
-  - [x] `/contents/articles/nested/without-robots/`: without robotesAttrobutes post.
-  - [x] `/contents/articles/nested/without-tags/`: Without tags post.
-- [x] `/feeds/index`
-- [ ] `/search`
-- [x] `/series`
-  - [ ] `/series/{seriesName}`
-- [x] `/sitemaps/`
-- [x] `/system/health`
-- [x] `/system/metadata`
-- [x] `/tags`
-  - [x] `/tags/{tagName}`
-  - [ ] `/tags/{tagName}?{queryParams}`
+- [x] `/v1/archives`
+- [x] `/v1/articles`
+  - [ ] `/v1/articles?{queryParams}`
+- [ ] `/v1/contents/articles/standard/`: Standard post (not nested).
+- [x] `/v1/contents/articles/nested/standard/`: Standard post.
+  - [x] `/v1/contents/articles/nested/empty-robots/`: robotesAttrobutes are empty post.
+  - [x] `/v1/contents/articles/nested/empty-tags/`: tags are empty post.
+  - [x] `/v1/contents/articles/nested/partially-robots/`: with partially robotesAttrobutes post.
+  - [x] `/v1/contents/articles/nested/with-externalresources/`: With externalResources post.
+  - [x] `/v1/contents/articles/nested/without-robots/`: without robotesAttrobutes post.
+  - [x] `/v1/contents/articles/nested/without-tags/`: Without tags post.
+- [x] `/v1/feeds/index`
+- [ ] `/v1/search`
+- [x] `/v1/series`
+  - [ ] `/v1/series/{seriesName}`
+- [x] `/v1/sitemaps/`
+- [x] `/v1/system/health`
+- [x] `/v1/system/metadata`
+- [x] `/v1/tags`
+  - [x] `/v1/tags/{tagName}`
+  - [ ] `/v1/tags/{tagName}?{queryParams}`
 
 ## Docker Support
 
