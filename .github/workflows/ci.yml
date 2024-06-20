@@ -25,6 +25,7 @@ jobs:
       - name: Set up rust
         run: |
           rustup toolchain install 1.79.0 --profile minimal --no-self-update
+          rustup default 1.79.0-${{ matrix.target.triple }}
           rustup --version
           rustc --version
           cargo --version
