@@ -16,7 +16,7 @@ This project target is create a mock server of [Qualtet](https://github.com/yosh
 Install [cargo-watch](https://github.com/watchexec/cargo-watch).
 
 ```
-$ cargo install cargo-watch@8.4.1
+$ cargo install cargo-watch@8.5.2
 ```
 
 ## API Docs
