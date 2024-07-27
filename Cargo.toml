@@ -3,13 +3,13 @@ name = "qualtet-mock"
 version = "2.13.0"
 edition = "2021"
 authors = ["yoshinorin"]
-rust-version = "1.79"
+rust-version = "1.80"
 
 [dependencies]
 actix-web = "4.8.0"
-log = "0.4.21"
-env_logger = "0.10.1"
-actix-cors = "0.6.5"
+log = "0.4.22"
+env_logger = "0.11.5"
+actix-cors = "0.7.0"
 
 [profile.release]
 strip = true
