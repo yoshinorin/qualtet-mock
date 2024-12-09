@@ -1,5 +1,5 @@
 # Build image
-FROM rust:1.81.0-bookworm as builder
+FROM rust:1.83.0-bookworm as builder
 
 LABEL maintainer="yoshinorin"
 WORKDIR /qualtet-mock
