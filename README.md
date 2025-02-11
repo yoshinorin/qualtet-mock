@@ -7,7 +7,7 @@ This project target is create a mock server of [Qualtet](https://github.com/yosh
 ## Requirements
 
 * rustup 1.27.1
-* rustc 1.83.0
+* rustc 1.84.1
 * cargo-watch (Optional)
 * clippy (Optional: for lint)
 
@@ -16,7 +16,7 @@ This project target is create a mock server of [Qualtet](https://github.com/yosh
 Install [cargo-watch](https://github.com/watchexec/cargo-watch).
 
 ```
-$ cargo install cargo-watch@8.5.2
+$ cargo install cargo-watch@8.5.3
 ```
 
 ## API Docs
