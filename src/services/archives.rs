@@ -1,5 +1,5 @@
 use crate::utils;
-use actix_web::{get, Error, HttpResponse};
+use actix_web::{Error, HttpResponse, get};
 
 #[get("/v1/archives/")]
 pub async fn archives() -> Result<HttpResponse, Error> {

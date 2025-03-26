@@ -6,8 +6,8 @@ This project target is create a mock server of [Qualtet](https://github.com/yosh
 
 ## Requirements
 
-* rustup 1.27.1
-* rustc 1.84.1
+* rustup 1.28.1
+* rustc 1.85.1
 * cargo-watch (Optional)
 * clippy (Optional: for lint)
 

@@ -23,7 +23,9 @@ mod utils;
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
-    env::set_var("RUST_LOG", "debug");
+    unsafe {
+        env::set_var("RUST_LOG", "debug");
+    }
     env_logger::init();
 
     info!("server is starting up");

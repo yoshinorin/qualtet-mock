@@ -1,6 +1,6 @@
 use crate::utils;
 use actix_web::web::Path;
-use actix_web::{get, Error, HttpResponse};
+use actix_web::{Error, HttpResponse, get};
 
 #[get("/v1/contents/articles/nested/{path}")]
 pub async fn content_without_trailing_slash(path: Path<String>) -> Result<HttpResponse, Error> {
