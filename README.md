@@ -8,15 +8,15 @@ This project target is create a mock server of [Qualtet](https://github.com/yosh
 
 * rustup 1.28.1
 * rustc 1.85.1
-* cargo-watch (Optional)
+* watchexec (Optional)
 * clippy (Optional: for lint)
 
 ## Preconditions
 
-Install [cargo-watch](https://github.com/watchexec/cargo-watch).
+Install [watchexec](https://github.com/watchexec/watchexec).
 
 ```
-$ cargo install cargo-watch@8.5.3
+$ cargo install --locked watchexec-cli@2.3.0
 ```
 
 ## API Docs

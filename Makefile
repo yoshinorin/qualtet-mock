@@ -2,7 +2,7 @@ run:
 	cargo run
 
 watch:
-	cargo watch -w src -x run
+	watchexec -w src -r "cargo run"
 
 fmt:
 	cargo fmt
