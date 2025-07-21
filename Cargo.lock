@@ -1072,7 +1072,7 @@ dependencies = [
 
 [[package]]
 name = "qualtet-mock"
-version = "2.17.0"
+version = "2.18.0"
 dependencies = [
  "actix-cors",
  "actix-web",
