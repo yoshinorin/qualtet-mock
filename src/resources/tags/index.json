@@ -2,26 +2,31 @@
   {
     "id": "01fvym471p7h4y75d89a5zr4kk",
     "name": "Scala",
+    "path": "/scala",
     "count": 96
   },
   {
     "id": "01fvym1w995acns6d4d0rb4ng5",
     "name": "Rust",
+    "path": "/rust",
     "count": 4
   },
   {
     "id": "01fvym3zxbj8s3fdkwd121awfh",
     "name": "Akka",
+    "path": "/akka",
     "count": 9
   },
   {
     "id": "01fvym4d4hpkf1yyvz6p62e0bx",
     "name": "Android",
+    "path": "/android",
     "count": 2
   },
   {
     "id": "01fvym20dw1btxx1vy8pzrkw3n",
     "name": "diary",
+    "path": "/diary",
     "count": 291
   }
 ]

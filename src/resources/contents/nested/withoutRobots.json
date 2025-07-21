@@ -5,11 +5,13 @@
   "tags": [
     {
       "id": "01fvym2hcjc94fem3h7fpbh0rr",
-      "name": "Scala"
+      "name": "Scala",
+      "path": "/scala"
     },
     {
       "id": "01fvym6sy00a4ppdpz1zv6tjar",
-      "name": "Cats"
+      "name": "Cats",
+      "path": "/cats"
     }
   ],
   "description": "Proin tellus nibh, pretium vitae bibendum in, tempus nec odio...",

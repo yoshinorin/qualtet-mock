@@ -2,18 +2,21 @@
   {
     "id": "01h3vrtym0vptjdakxd0n20xx8",
     "name": "Maecenas",
+    "path": "/maecenas",
     "title": "Maecenas luctus mauris faucibus",
     "description": "Maecenas luctus mauris faucibus ante fermentum, id mattis dolor maximus."
   },
   {
     "id": "01h3vrtym2te9y0a5hkwmbtq4y",
     "name": "Quisque",
+    "path": "/quisque",
     "title": "Quisque eget augue sed",
     "description": "Quisque eget augue sed orci aliquam condimentum."
   },
   {
     "id": "01h3vrtym2te9y0a5hkwmbtq4z",
     "name": "Phasellus",
+    "path": "/phasellus",
     "title": "Phasellus ac enim et",
     "description": "Phasellus ac enim et sem suscipit tincidunt."
   }
