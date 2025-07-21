@@ -16,7 +16,7 @@ This project target is create a mock server of [Qualtet](https://github.com/yosh
 Install [watchexec](https://github.com/watchexec/watchexec).
 
 ```
-$ cargo install --locked watchexec-cli@2.3.0
+$ cargo install --locked watchexec-cli@2.3.2
 ```
 
 ## API Docs
