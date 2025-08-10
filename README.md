@@ -36,6 +36,10 @@ Please see [Qualtet's REST API docs](https://yoshinorin.github.io/qualtet/rest-a
   - [x] `/v1/contents/articles/nested/with-externalresources/`: With externalResources post.
   - [x] `/v1/contents/articles/nested/without-robots/`: without robotesAttrobutes post.
   - [x] `/v1/contents/articles/nested/without-tags/`: Without tags post.
+  - [x] `/v1/contents/articles/nested/{id}/adjacent`: adjacent post
+      - [x] `/v1/contents/articles/nested/prev-next/adjacent`
+      - [x] `/v1/contents/articles/nested/next-only/adjacent`
+      - [x] `/v1/contents/articles/nested/prev-only/adjacent`
 - [x] `/v1/feeds/index`
 - [ ] `/v1/search`
 - [x] `/v1/series`

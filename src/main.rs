@@ -6,6 +6,7 @@ use services::{
     archives::archives,
     articles::articles,
     contents::{
+        content_adjacent_with_trailing_slash, content_adjacent_without_trailing_slash,
         content_with_trailing_slash, content_without_trailing_slash,
         content_yyyymmdd_with_trailing_slash, content_yyyymmdd_without_trailing_slash,
     },
@@ -41,6 +42,8 @@ async fn main() -> std::io::Result<()> {
             .service(content_without_trailing_slash)
             .service(content_yyyymmdd_with_trailing_slash)
             .service(content_yyyymmdd_without_trailing_slash)
+            .service(content_adjacent_with_trailing_slash)
+            .service(content_adjacent_without_trailing_slash)
             .service(index_feed)
             .service(series)
             .service(sitemaps)

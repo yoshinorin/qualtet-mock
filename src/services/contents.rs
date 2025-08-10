@@ -26,6 +26,15 @@ fn response(path: String) -> Result<HttpResponse, Error> {
         }
         "without-robots/" => utils::readfile("./src/resources/contents/nested/withoutRobots.json")?,
         "without-tags/" => utils::readfile("./src/resources/contents/nested/withoutTags.json")?,
+        "adjacent-prev-only/" => {
+            utils::readfile("./src/resources/contents/nested/adjacent-prev-only.json")?
+        }
+        "adjacent-prev-next/" => {
+            utils::readfile("./src/resources/contents/nested/adjacent-prev-next.json")?
+        }
+        "adjacent-next-only/" => {
+            utils::readfile("./src/resources/contents/nested/adjacent-next-only.json")?
+        }
         _ => return utils::make_not_found_response(),
     };
     utils::make_ok_response(json)
@@ -40,5 +49,27 @@ pub async fn content_yyyymmdd_without_trailing_slash() -> Result<HttpResponse, E
 #[get("/v1/contents/articles/{yyyy}/{mm}/{dd}/{path}/")]
 pub async fn content_yyyymmdd_with_trailing_slash() -> Result<HttpResponse, Error> {
     let content = utils::readfile("./src/resources/contents/yyyy/mm/dd/standard.json")?;
+    utils::make_ok_response(content)
+}
+
+#[get("/v1/contents/{id}/adjacent")]
+pub async fn content_adjacent_without_trailing_slash(
+    id: Path<String>,
+) -> Result<HttpResponse, Error> {
+    let id = id.into_inner();
+    let content = utils::readfile(&format!(
+        "./src/resources/contents/{}/adjacent/index.json",
+        id
+    ))?;
+    utils::make_ok_response(content)
+}
+
+#[get("/v1/contents/{id}/adjacent/")]
+pub async fn content_adjacent_with_trailing_slash(id: Path<String>) -> Result<HttpResponse, Error> {
+    let id = id.into_inner();
+    let content = utils::readfile(&format!(
+        "./src/resources/contents/{}/adjacent/index.json",
+        id
+    ))?;
     utils::make_ok_response(content)
 }
